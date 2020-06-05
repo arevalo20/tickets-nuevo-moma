@@ -1,0 +1,133 @@
+body {
+	background-color: #f8f8f8;
+}
+
+.container-log {
+	height: 100vh;
+	height: -webkit-fill-available;
+	display: flex;
+	align-items: start;
+}
+
+.center-h {
+	justify-content: center;
+}
+
+.center-v {
+	align-items: center;
+}
+
+.img-log-tickets {
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+.titulo-tickets {
+	font-size: 22px;
+	margin: 0px;
+}
+
+.alert {
+	padding: 5px;
+	margin: 0px;
+	margin-top: 5px;
+	border: none;
+}
+
+.alert-danger {
+	color: white;
+	background-color: #da4453;
+}
+
+.alert-dismissible .close {
+	padding: 0.1em 0.5em;
+	font-size: 22px;
+	color: #ffffff;
+	text-shadow: none;
+	opacity: 0.9;
+	top: 2px;
+}
+
+.alert-dismissible .close:not(:disabled):not(.disabled):hover {
+	color: #9e0f0f;
+	text-decoration: none;
+	opacity: 0.75;
+}
+
+.input-tickets {
+	position: relative;
+}
+
+.input-tickets::before {
+	font-family: 'Font Awesome 5 Free';
+	font-style: normal !important;
+	font-weight: 400 !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	font-size: 16px;
+	font-size: 1em;
+	position: absolute;
+	top: 11px;
+	left: 7px;
+}
+
+.input-tickets.input_user::before {
+	content: '\f007';
+	z-index: 1;
+}
+
+.input-tickets.input_psw::before {
+	content: '\f11c';
+	z-index: 1;
+}
+
+.input-log-tickets {
+	border-radius: 0px 0px 0 0;
+	padding-left: 30px;
+}
+
+.input-log-tickets:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: #da4453;
+}
+
+.btn {
+	border-radius: 0%;
+	font-size: 15px;
+}
+
+.btn-default {
+	background-color: #da4453;
+	color: #ffffff;
+	border-color: #da4453;
+}
+
+.btn-default:hover {
+	color: #da4453;
+	background-color: #e6e6e6;
+	border-color: #da4453;
+}
+
+.separator {
+	border-top: 1px solid #d8d8d8;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+/* ----------------------- JQuery validate */
+label.error {
+	float: none;
+	color: red !important;
+	padding-left: 0.5em;
+	vertical-align: middle;
+	font-size: 12px !important;
+	font-weight: 500 !important;
+	margin-bottom: 0rem;
+}
