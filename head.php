@@ -29,9 +29,11 @@ while ($row = mysqli_fetch_array($query)) {
   <title><?php echo $title . " " . $name; ?> </title>
 
   <!-- Bootstrap -->
-  <link href="css/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- <link href="css/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
   <!-- Font Awesome -->
-  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="css/font-awesome/css/solid.min.css" rel="stylesheet"> -->
+  <script src="https://kit.fontawesome.com/56ccb7ed33.js" crossorigin="anonymous"></script>
   <!-- NProgress -->
   <link href="css/nprogress/nprogress.css" rel="stylesheet">
   <!-- iCheck -->
@@ -45,38 +47,26 @@ while ($row = mysqli_fetch_array($query)) {
   <!-- jQuery custom content scroller -->
   <link href="css/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
 
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
   <!-- bootstrap-daterangepicker -->
   <link href="css/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
   <!-- Custom Theme Style -->
   <!-- <link href="css/custom.min.css" rel="stylesheet"> -->
-  <link href="css/custom.css" rel="stylesheet">
+  <!-- <link href="css/custom.css" rel="stylesheet"> -->
+
+  <link href="css/styles.css" rel="stylesheet">
 
   <!-- MICSS button[type="file"] -->
   <link rel="stylesheet" href="css/micss.css">
 
 </head>
 
-<body class="nav-md">
-  <div class="container body">
-    <div class="main_container">
-      <div class="col-md-3 left_col">
-        <div class="left_col scroll-view">
-          <div class="navbar nav_title" style="border: 0;">
-            <a href="#" class="site_title"><i class="fa fa-ticket"></i> <span>Ticketly</span></a>
-          </div>
-          <div class="clearfix"></div>
+<body class="nav-md sb-nav-fixed">
+  <?php require_once "header.php"; ?>
 
-          <!-- menu profile quick info -->
-          <div class="profile clearfix">
-            <div class="profile_pic">
-              <img src="images/profiles/<?php echo $profile_pic; ?>" alt="<?php echo $name; ?>" class="img-circle profile_img">
-            </div>
-            <div class="profile_info">
-              <span>Bienvenido,</span>
-              <h2><?php echo $name; ?></h2>
-            </div>
-          </div>
-          <!-- /menu profile quick info -->
-
-          <br />
+  <div id="layoutSidenav">
+    <!-- <div class="main_container"> -->

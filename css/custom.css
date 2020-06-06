@@ -775,7 +775,7 @@ a:visited {
 	color: #e7e7e7;
 	font-weight: 500;
 }
-.nav li li.current-page a,
+/* .nav li li.current-page a,
 .nav.child_menu li li a.active,
 .nav.child_menu li li a:hover {
 	color: #fff;
@@ -796,7 +796,7 @@ a:visited {
 }
 .nav li li li.current-page {
 	background: 0 0;
-}
+} */
 .navbar-brand,
 .navbar-nav > li > a,
 .site_title {
