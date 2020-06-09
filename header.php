@@ -7,11 +7,11 @@
     <!-- </div> -->
     <!-- <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button> -->
 
-    <div class="nav toggle order-lg-0 ml-auto mr-0 mt-1 mr-md-3 my-md-0 order-lg-0">
+    <div class="nav toggle order-lg-0 mr-0 ml-5 mt-1 ml-md-0 mr-md-0 my-md-0 order-lg-0">
       <a id="menu_toggle"><i class="fa fa-bars"></i></a>
     </div>
 
-    <ul class="d-none d-lg-inline-flex navbar-nav ml-auto mr-0 mr-md-3 my-2 my-md-0 order-lg-0">
+    <ul class="d-none d-lg-inline-flex navbar-nav ml-auto">
       <li class="nav-item dropdown">
         <a href="#" class="user-profile nav-link" data-toggle="dropdown" aria-expanded="false">
           <img src="images/profiles/<?php echo $profile_pic; ?>" alt=""><?php echo $name; ?>
@@ -24,11 +24,11 @@
       </li>
     </ul>
 
-    <ul class="d-lg-none d-inline-flex navbar-nav ml-1 mr-0 mr-md-3 my-md-0 order-lg-0">
+    <ul class="d-lg-none d-inline-flex navbar-nav mr-0 mr-md-3 my-md-0">
       <li class="nav-item dropdown">
-        <a href="#" class="user-profile nav-link" data-toggle="dropdown" aria-expanded="false">
+        <a href="#" class="user-profile nav-link pr-0" data-toggle="dropdown" aria-expanded="false">
           <img src="images/profiles/<?php echo $profile_pic; ?>" alt=""><!-- <?php echo $name; ?> -->
-          <span class=" fa fa-angle-down"></span>
+          <span class="fa fa-angle-down"></span>
         </a>
         <div class="dropdown-menu sesion dropdown-menu-right rounded-0 shadow-lg border-0 m-0">
           <a class="dropdown-item" href="dashboard.php"><i class="fa fa-user"></i> Mi cuenta</a>

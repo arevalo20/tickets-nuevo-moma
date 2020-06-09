@@ -4,60 +4,71 @@ include "head.php";
 include "sidebar.php";
 ?>
 
-<div class="right_col" role="main">
-  <!-- page content -->
-  <div class="">
-    <div class="page-title">
-      <div class="clearfix"></div>
-      <div class="col-md-12 col-sm-12 col-xs-12">
+<div id="layoutSidenav_content">
+  <!-- main -->
+  <main>
+    <div class="container-fluid">
+      <div class="mt-4">
         <?php
         include("modal/new_ticket.php");
-        include("modal/upd_ticket.php");
+        // include("modal/upd_ticket.php");
         ?>
-        <div class="x_panel">
-          <div class="x_title">
-            <h2>Gastos</h2>
-            <ul class="nav navbar-right panel_toolbox">
-              <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-              </li>
-              <li><a class="close-link"><i class="fa fa-close"></i></a>
-              </li>
-            </ul>
-            <div class="clearfix"></div>
+      </div>
+
+      <div class="mt-4 mb-4">
+        <div class="card">
+          <div class="card-header">
+            <h4>Gastos</h4>
           </div>
 
-          <!-- form seach -->
-          <form class="form-horizontal" role="form" id="gastos">
-            <div class="form-group row">
-              <label for="q" class="col-md-2 control-label">Nombre/Asunto</label>
-              <div class="col-md-4">
-                <input type="text" class="form-control" id="q" placeholder="Nombre del ticket" onkeyup='load(1);'>
+          <div class="card-body">
+
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-12 col-md-8">
+                <!-- form seach -->
+                <form class="form-horizontal" role="form" id="gastos">
+                  <div class="form-group">
+                    <div class="row">
+                      <label for="q" class="control-label col-12 col-md-3 col-sm-3">Nombre/Asunto</label>
+                      <div class="col-12 col-md-6 col-sm-6">
+                        <input type="text" class="form-control" id="q" placeholder="Nombre del ticket" onkeyup='load(1);'>
+                      </div>
+                      <div class="col-md-3">
+                        <button type="button" class="btn btn-primary" onclick='load(1);'>
+                          <span class="glyphicon glyphicon-search"></span> Buscar</button>
+                        <span id="loader" class="ml-3"></span>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <!-- end form seach -->
               </div>
-              <div class="col-md-3">
-                <button type="button" class="btn btn-default" onclick='load(1);'>
-                  <span class="glyphicon glyphicon-search"></span> Buscar</button>
-                <span id="loader"></span>
-              </div>
+              <div class="col-md-2"></div>
             </div>
-          </form>
-          <!-- end form seach -->
 
-
-          <div class="x_content">
             <div class="table-responsive">
               <!-- ajax -->
               <div id="resultados"></div><!-- Carga los datos ajax -->
               <div class='outer_div'></div><!-- Carga los datos ajax -->
               <!-- /ajax -->
             </div>
+
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div><!-- /page content -->
 
-<?php include "footer.php" ?>
+      <?php
+      // include("modal/new_ticket.php");
+      include("modal/upd_ticket.php");
+      ?>
+    </div>
+  </main>
+  <!-- /main -->
+
+  <?php include "footer.php" ?>
+
+</div>
 
 <script type="text/javascript" src="js/ticket.js"></script>
 <script type="text/javascript" src="js/VentanaCentrada.js"></script>
