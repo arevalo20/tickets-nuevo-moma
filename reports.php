@@ -186,7 +186,7 @@ $kinds = mysqli_query($con, "select * from kind");
               // si hay reportes
               $_SESSION["report_data"] = $users;
             ?>
-              <div class="">
+              <div class="mt-3">
                 <div class="table-responsive">
                   <table class="table table-bordered table-hover">
                     <thead>

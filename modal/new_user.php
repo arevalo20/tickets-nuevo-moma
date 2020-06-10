@@ -10,7 +10,7 @@
     <div class="modal-content">
 
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Agregar Usuario</h4>
+        <h5 class="modal-title" id="myModalLabel">Agregar Usuario</h5>
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
       </div>
 
@@ -18,40 +18,40 @@
         <form class="form-horizontal form-label-left input_mask" id="add_user" name="add_user">
           <div id="result_user"></div>
 
-          <div class="form-group">
-            <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="row">
-                  <label for="" class="control-label col-md-2 col-sm-2 col-xs-12"><i class="fa fa-user" aria-hidden="true"></i></label>
-                  <div class="col-md-10 col-sm-10 col-xs-12">
-                    <input name="name" required type="text" class="form-control" placeholder="Nombre">
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="row">
-                  <label for="" class="control-label col-md-2 col-sm-2 col-xs-12"><i class="fa fa-user" aria-hidden="true"></i></label>
-                  <div class="col-md-10 col-sm-10 col-xs-12">
-                    <input name="lastname" type="text" class="form-control" placeholder="Apellidos" required>
-                  </div>
-                </div>
+          <!-- <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+              <div class="mx-auto input-tickets input_user">
+                <input name="user" required type="text" class="form-control input-log-tickets" placeholder="Usuario">
               </div>
             </div>
+          </div> -->
+
+          <div class="row">
+
+            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+              <div class="mx-auto input-tickets input_name">
+                <input name="name" required type="text" class="form-control input-log-tickets" placeholder="Nombre">
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+              <div class="mx-auto input-tickets input_name">
+                <input name="lastname" type="text" class="form-control input-log-tickets" placeholder="Apellidos" required>
+              </div>
+            </div>
+
           </div>
 
-          <div class="form-group">
-            <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="row">
-                  <label for="" class="control-label col-md-2 col-sm-2 col-xs-12"><i class="fa fa-envelope" aria-hidden="true"></i></label>
-                  <div class="col-md-10 col-sm-10 col-xs-12">
-                    <input name="email" type="text" class="form-control" placeholder="Correo Electronico" required>
-                  </div>
-                </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+              <div class="input-tickets input_email">
+                <input name="email" type="text" class="form-control input-log-tickets" placeholder="Correo Electronico" required>
               </div>
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <select class="form-control" required name="status">
-                  <option value="" selected>-- Selecciona estado --</option>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+              <div class="input-tickets input_status">
+                <select class="form-control input-log-tickets" required name="status">
+                  <option value="" selected>Selecciona estado</option>
                   <option value="1">Activo</option>
                   <option value="0">Inactivo</option>
                 </select>
@@ -59,15 +59,10 @@
             </div>
           </div>
 
-          <div class="form-group">
-            <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="row">
-                  <label class="control-label col-md-2 col-sm-2 col-xs-12" for="password"><span class="required">*</span><i class="fas fa-key"></i></label>
-                  <div class="col-md-10 col-sm-10 col-xs-12">
-                    <input type="password" id="password" name="password" required class="form-control">
-                  </div>
-                </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+              <div class="input-tickets input_psw">
+                <input type="password" id="password" name="password" required class="form-control input-log-tickets">
               </div>
             </div>
           </div>
@@ -83,9 +78,11 @@
         </form>
 
       </div>
+
       <!-- <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
       </div> -->
+
     </div>
   </div>
 </div>

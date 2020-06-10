@@ -17,7 +17,7 @@ $categories = mysqli_query($con, "select * from category");
   <div class="modal-dialog modal-md">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Agregar Ticket</h4>
+        <h5 class="modal-title" id="myModalLabel">Agregar Ticket</h5>
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
       </div>
       <div class="modal-body">
@@ -27,7 +27,7 @@ $categories = mysqli_query($con, "select * from category");
             <div class="row">
               <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tipo
               </label>
-              <div class="col-md-9 col-sm-9 col-xs-12">
+              <div class="col-md-8 col-sm-8 col-xs-12">
                 <select class="form-control" name="kind_id">
                   <?php foreach ($kinds as $p) : ?>
                     <option value="<?php echo $p['id']; ?>"><?php echo $p['name']; ?></option>
@@ -36,28 +36,31 @@ $categories = mysqli_query($con, "select * from category");
               </div>
             </div>
           </div>
+          
           <div class="form-group">
             <div class="row">
               <label class="control-label col-md-3 col-sm-3 col-xs-12">Titulo<span class="required">*</span></label>
-              <div class="col-md-9 col-sm-9 col-xs-12">
+              <div class="col-md-8 col-sm-8 col-xs-12">
                 <input type="text" name="title" class="form-control" placeholder="Titulo">
               </div>
             </div>
           </div>
+
           <div class="form-group">
             <div class="row">
               <label class="control-label col-md-3 col-sm-3 col-xs-12">Descripción <span class="required">*</span>
               </label>
-              <div class="col-md-9 col-sm-9 col-xs-12">
+              <div class="col-md-8 col-sm-8 col-xs-12">
                 <textarea name="description" class="form-control" placeholder="Descripción"></textarea>
               </div>
             </div>
           </div>
+
           <div class="form-group">
             <div class="row">
               <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Proyecto
               </label>
-              <div class="col-md-9 col-sm-9 col-xs-12">
+              <div class="col-md-8 col-sm-8 col-xs-12">
                 <select class="form-control" name="project_id">
                   <option selected="" value="">-- Selecciona --</option>
                   <?php foreach ($projects as $p) : ?>
@@ -67,11 +70,12 @@ $categories = mysqli_query($con, "select * from category");
               </div>
             </div>
           </div>
+
           <div class="form-group">
             <div class="row">
               <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Categoria
               </label>
-              <div class="col-md-9 col-sm-9 col-xs-12">
+              <div class="col-md-8 col-sm-8 col-xs-12">
                 <select class="form-control" name="category_id">
                   <option selected="" value="">-- Selecciona --</option>
                   <?php foreach ($categories as $p) : ?>
@@ -81,11 +85,12 @@ $categories = mysqli_query($con, "select * from category");
               </div>
             </div>
           </div>
+
           <div class="form-group">
             <div class="row">
               <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Prioridad
               </label>
-              <div class="col-md-9 col-sm-9 col-xs-12">
+              <div class="col-md-8 col-sm-8 col-xs-12">
                 <select class="form-control" name="priority_id">
                   <option selected="" value="">-- Selecciona --</option>
                   <?php foreach ($priorities as $p) : ?>
@@ -95,11 +100,12 @@ $categories = mysqli_query($con, "select * from category");
               </div>
             </div>
           </div>
+
           <div class="form-group">
             <div class="row">
               <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Estado
               </label>
-              <div class="col-md-9 col-sm-9 col-xs-12">
+              <div class="col-md-8 col-sm-8 col-xs-12">
                 <select class="form-control" name="status_id">
                   <option selected="" value="">-- Selecciona --</option>
                   <?php foreach ($statuses as $p) : ?>

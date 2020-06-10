@@ -8,7 +8,7 @@
   <div class="modal-dialog modal-md">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Nueva Categoria</h4>
+        <h5 class="modal-title" id="myModalLabel">Nueva Categoria</h5>
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
       </div>
       <div class="modal-body">
@@ -18,7 +18,7 @@
           <div class="form-group">
             <div class="row">
               <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre <span class="required">*</span> </label>
-              <div class="col-md-9 col-sm-9 col-xs-12">
+              <div class="col-md-8 col-sm-8 col-xs-12">
                 <input name="name" class="form-control" required type="text" placeholder="Nombre Categoria">
               </div>
             </div>

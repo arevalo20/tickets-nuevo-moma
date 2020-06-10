@@ -1,0 +1,231 @@
+body {
+	background-color: #f8f8f8;
+}
+
+.required {
+	color: #c82333;
+}
+
+.container-log {
+	height: 100vh;
+	height: -webkit-fill-available;
+	display: flex;
+	align-items: start;
+}
+
+.center-h {
+	justify-content: center;
+}
+
+.center-v {
+	align-items: center;
+}
+
+.input-log-tickets {
+	padding-left: 25px;
+}
+
+.input-tickets {
+	position: relative;
+}
+
+.input-tickets::before {
+	font-family: 'Font Awesome 5 Free';
+	font-style: normal !important;
+	font-weight: 400 !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	font-size: 16px;
+	font-size: 1em;
+	position: absolute;
+	top: 11px;
+	left: 10px;
+}
+
+.input_name::before {
+	content: '\f007';
+	z-index: 1;
+}
+
+.input_user::before {
+	content: '\f2bd';
+	z-index: 1;
+}
+
+.input_email::before {
+	content: '\f0e0';
+	z-index: 1;
+}
+
+.input_status::before {
+	content: '\f02e';
+	z-index: 1;
+}
+
+.input_psw::before {
+	content: '\f11c';
+	z-index: 1;
+}
+
+.input-log-tickets {
+	border-radius: 0px 0px 0 0;
+	padding-left: 30px;
+}
+
+.input-log-tickets:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: #da4453;
+}
+
+/*  */
+.user-profile img {
+	width: 29px;
+	height: 29px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+/*  */
+
+/*  */
+/* .fixed-top,
+.sb-nav-fixed #layoutSidenav #layoutSidenav_nav,
+.sb-nav-fixed .sb-topnav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+ */
+.sb-sidenav-dark {
+	background: #11202f;
+	color: rgba(255, 255, 255, 0.8);
+}
+/*  */
+
+/* ---- .pagination ---- */
+
+.pagination {
+	display: flex;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.pagination > li {
+	display: inline;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	margin-left: -1px;
+	line-height: 1.42857143;
+	color: #1abb9c;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+	margin-left: 0;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.pagination > .disabled > a,
+.pagination > .disabled > a:focus,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > span,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > span:hover {
+	color: #777;
+	cursor: not-allowed;
+	background-color: #fff;
+	border-color: #ddd;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+	z-index: 3;
+	color: #fff;
+	cursor: default;
+	background-color: #1abb9c;
+	border-color: #1abb9c;
+}
+/* ---- .pagination fin ---- */
+
+/* ---- .alerts ---- */
+.alert-danger {
+	color: #e9edef;
+	background-color: rgba(231, 76, 60, 0.88);
+	border-color: rgba(231, 76, 60, 0.88);
+}
+.alert-warning {
+	color: #e9edef;
+	background-color: rgba(243, 156, 18, 0.88);
+	border-color: rgba(243, 156, 18, 0.88);
+}
+/* ---- .alerts fin ---- */
+
+/* ---- #respuesta ---- */
+#respuesta {
+	margin-bottom: 10px;
+}
+/* ---- #respuesta fin ---- */
+
+/* ---- .control-label ---- */
+label.control-label {
+	margin: 0;
+	align-items: center;
+	justify-content: right;
+	display: flex;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	color: #737373;
+}
+/* ---- .control-label fin ---- */
+
+/* ---- .ln_solid ---- */
+.ln_solid {
+	border-top: 1px solid #e5e5e5;
+	color: #fff;
+	background-color: #fff;
+	height: 1px;
+	margin: 20px 0;
+}
+/* ---- .ln_solid fin ---- */
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.nav-md #layoutSidenav #layoutSidenav_nav {
+		display: none;
+	}
+	.user-profile img {
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		margin-right: 0px;
+	}
+	label.control-label {
+		margin-bottom: 5px;
+		justify-content: left;
+	}
+}

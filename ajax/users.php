@@ -10,15 +10,15 @@ if (isset($_GET['id'])) {
   if ($delete1 = mysqli_query($con, "DELETE FROM user WHERE id='" . $id_expence . "'")) {
 ?>
     <div class="alert alert-success alert-dismissible" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <strong>Aviso!</strong> Datos eliminados exitosamente.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     </div>
   <?php
   } else {
   ?>
     <div class="alert alert-danger alert-dismissible" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <strong>Error!</strong> Lo siento algo ha salido mal intenta nuevamente.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     </div>
 <?php
   } //end else
@@ -67,7 +67,7 @@ if ($action == 'ajax') {
           <th class="column-title">Correo Electrónico </th>
           <th class="column-title">Estado </th>
           <th class="column-title">Fecha </th>
-          <th class="column-title no-link last"><span class="nobr"></span></th>
+          <th class="column-title no-link last">Acciones</th>
         </tr>
       </thead>
       <tbody>
@@ -104,19 +104,19 @@ if ($action == 'ajax') {
         <?php
         } //end while
         ?>
-        <tr>
-          <td colspan=6><span class="float-right">
-              <?php echo paginate($reload, $page, $total_pages, $adjacents); ?>
-            </span></td>
-        </tr>
     </table>
+
+    <div class="mb-3">
+      <?php echo paginate($reload, $page, $total_pages, $adjacents); ?>
+    </div>
+
     </div>
   <?php
   } else {
   ?>
     <div class="alert alert-warning alert-dismissible" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <strong>Aviso!</strong> No hay datos para mostrar
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     </div>
 <?php
   }

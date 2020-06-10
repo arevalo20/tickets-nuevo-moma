@@ -1,15 +1,13 @@
-<footer class="py-4 bg-light mt-auto">
-  <!-- footer content -->
-  <!-- This project is created using <a target="_blank" style="color: #0000ff" href="http://github.com/amnersaucedososa">Web Project Builder. </a>An online php code builder tool By <a style="color: #0000ff; text-decoration: underline;" target="_blank" href="http://github.com/amnersaucedososa">Abisoft</a> -->
+<footer class="py-4 bg-white mt-auto">
   <div class="container-fluid">
     <div class="d-flex align-items-center justify-content-between small">
-      <div class="text-muted">Sistema de tickets para <a href="http://omivende.com/" target="_blank">Omi vende</a>
+      <div class="text-muted">Sistema de tickets para <a href="http://moma.mx/" target="_blank">Moma</a>
       </div>
 
       <div>
-        <a href="#">Privacy Policy</a>
+        <a href="#">Política de privacidad</a>
         &middot;
-        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Terminos &amp; Condiciones</a>
       </div>
     </div>
   </div>

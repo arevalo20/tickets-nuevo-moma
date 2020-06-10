@@ -47,11 +47,15 @@ include "sidebar.php";
               <div class="col-md-2"></div>
             </div>
 
-            <div class="table-responsive">
-              <!-- ajax -->
-              <div id="resultados"></div><!-- Carga los datos ajax -->
-              <div class='outer_div'></div><!-- Carga los datos ajax -->
-              <!-- /ajax -->
+            <div class="mt-3">
+              <div class="table-responsive">
+                <!-- ajax -->
+                <div id="resultados"></div>
+                <!-- Carga los datos ajax -->
+                <div class='outer_div'></div>
+                <!-- Carga los datos ajax -->
+                <!-- /ajax -->
+              </div>
             </div>
 
           </div>

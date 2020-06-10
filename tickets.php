@@ -18,7 +18,7 @@ include "sidebar.php";
       <div class="mt-4 mb-4">
         <div class="card">
           <div class="card-header">
-            <h4>Gastos</h4>
+            <h4>Tickets</h4>
           </div>
 
           <div class="card-body">
@@ -47,11 +47,15 @@ include "sidebar.php";
               <div class="col-md-2"></div>
             </div>
 
-            <div class="table-responsive">
-              <!-- ajax -->
-              <div id="resultados"></div><!-- Carga los datos ajax -->
-              <div class='outer_div'></div><!-- Carga los datos ajax -->
-              <!-- /ajax -->
+            <div class="mt-3">
+              <div class="table-responsive">
+                <!-- ajax -->
+                <div id="resultados"></div>
+                <!-- Carga los datos ajax -->
+                <div class='outer_div'></div>
+                <!-- Carga los datos ajax -->
+                <!-- /ajax -->
+              </div>
             </div>
 
           </div>
