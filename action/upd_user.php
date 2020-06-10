@@ -30,7 +30,7 @@ if (empty($_POST['mod_name'])) {
 
 		// update password by abisoft
 		if ($_POST["password"] != "") {
-			$update_passwd = mysqli_query($con, "update user set password=\"$password\" where id=$id");
+			$update_passwd = mysqli_query($con, "UPDATE user SET password=\"$password\" where id=$id");
 			if ($update_passwd) {
 				$messages[] = " Y la Contraseña ah sido actualizada.";
 			}
