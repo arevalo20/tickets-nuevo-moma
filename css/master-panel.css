@@ -92,21 +92,17 @@ body {
 /*  */
 
 /*  */
-/* .fixed-top,
-.sb-nav-fixed #layoutSidenav #layoutSidenav_nav,
-.sb-nav-fixed .sb-topnav {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 1030;
-}
- */
+/*  */
 .sb-sidenav-dark {
 	background: #11202f;
 	color: rgba(255, 255, 255, 0.8);
 }
 /*  */
+
+.nav.side-menu > li:hover {
+	background: rgba(255, 255, 255, 0.1);
+	border-right: 5px solid #1abb9c;
+}
 
 /* ---- .pagination ---- */
 
