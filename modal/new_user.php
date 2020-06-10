@@ -50,7 +50,7 @@
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="input-tickets input_status">
-                <select class="form-control input-log-tickets" required name="status">
+                <select class="custom-select input-log-tickets" required name="status">
                   <option value="" selected>Selecciona estado</option>
                   <option value="1">Activo</option>
                   <option value="0">Inactivo</option>

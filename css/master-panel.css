@@ -21,10 +21,6 @@ body {
 	align-items: center;
 }
 
-.input-log-tickets {
-	padding-left: 25px;
-}
-
 .input-tickets {
 	position: relative;
 }
@@ -79,7 +75,11 @@ body {
 .input-log-tickets:focus {
 	outline: none;
 	box-shadow: none;
-	border-color: #da4453;
+	border-color: #2a3f54;
+}
+
+.input-log-tickets:disabled {
+	border: none;
 }
 
 /*  */
