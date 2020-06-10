@@ -5,7 +5,7 @@ include "../config/config.php"; //Contiene funcion que conecta a la base de dato
 $action = (isset($_REQUEST['action']) && $_REQUEST['action'] != NULL) ? $_REQUEST['action'] : '';
 if (isset($_GET['id'])) {
   $id_expence = intval($_GET['id']);
-  $query = mysqli_query($con, "SELECT * from user where id='" . $id_expence . "'");
+  $query = mysqli_query($con, "SELECT * FROM user WHERE id='" . $id_expence . "'");
   $count = mysqli_num_rows($query);
   if ($delete1 = mysqli_query($con, "DELETE FROM user WHERE id='" . $id_expence . "'")) {
 ?>
@@ -63,10 +63,12 @@ if ($action == 'ajax') {
     <table class="table table-striped table-hover">
       <thead class="thead-dark">
         <tr class="headings">
-          <th class="column-title">Nombre </th>
-          <th class="column-title">Correo Electrónico </th>
-          <th class="column-title">Estado </th>
-          <th class="column-title">Fecha </th>
+          <th class="column-title">Usuario</th>
+          <th class="column-title">Nombre</th>
+          <th class="column-title">Correo Electrónico</th>
+          <th class="column-title">Estado</th>
+          <th class="column-title">Permisos</th>
+          <th class="column-title">Fecha</th>
           <th class="column-title no-link last">Acciones</th>
         </tr>
       </thead>
@@ -81,18 +83,23 @@ if ($action == 'ajax') {
             $status_f = "Inactivo";
           }
 
+          $username = $r['username'];
           $name = $r['name'];
           $email = $r['email'];
           $created_at = date('d/m/Y', strtotime($r['created_at']));
         ?>
+
+          <input type="hidden" value="<?php echo $username; ?>" id="username<?php echo $id; ?>">
           <input type="hidden" value="<?php echo $name; ?>" id="name<?php echo $id; ?>">
           <input type="hidden" value="<?php echo $email; ?>" id="email<?php echo $id; ?>">
           <input type="hidden" value="<?php echo $status; ?>" id="status<?php echo $id; ?>">
 
           <tr class="even pointer">
+            <td><?php echo $username; ?></td>
             <td><?php echo $name; ?></td>
             <td><?php echo $email; ?></td>
             <td><?php echo $status_f; ?></td>
+            <td><?php ?></td>
             <td><?php echo $created_at; ?></td>
             <td>
               <span class="float-right">

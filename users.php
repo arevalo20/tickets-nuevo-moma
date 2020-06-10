@@ -122,10 +122,12 @@ include "sidebar.php";
   })
 
   function obtener_datos(id) {
+    var username = $("#username" + id).val();
     var name = $("#name" + id).val();
     var email = $("#email" + id).val();
     var status = $("#status" + id).val();
     $("#mod_id").val(id);
+    $("#mod_username").val(username);
     $("#mod_name").val(name);
     $("#mod_email").val(email);
     $("#mod_status").val(status);

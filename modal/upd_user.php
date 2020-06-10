@@ -14,28 +14,26 @@
           <input type="hidden" id="mod_id" name="mod_id">
 
           <div class="row mx-auto">
-            <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="input-tickets input_user">
                 <input name="mod_username" id="mod_username" type="text" class="form-control input-log-tickets" required>
               </div>
             </div>
-          </div>
 
-          <div class="row mx-auto">
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="input-tickets input_name">
                 <input name="mod_name" id="mod_name" type="text" class="form-control input-log-tickets" required>
               </div>
             </div>
+          </div>
 
+          <div class="row mx-auto">
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="input-tickets input_email">
                 <input name="mod_email" id="mod_email" type="text" class="form-control input-log-tickets" required>
               </div>
             </div>
-          </div>
 
-          <div class="row mx-auto">
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="input-tickets input_status">
                 <select class="form-control input-log-tickets" required name="mod_status" id="mod_status">
@@ -45,7 +43,9 @@
                 </select>
               </div>
             </div>
+          </div>
 
+          <div class="row mx-auto">
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="input-tickets input_psw">
                 <input type="password" id="password" name="password" class="form-control input-log-tickets">
