@@ -1,9 +1,9 @@
 <?php
-$projects = mysqli_query($con, "select * from project");
-$priorities = mysqli_query($con, "select * from priority");
-$statuses = mysqli_query($con, "select * from status");
-$kinds = mysqli_query($con, "select * from kind");
-$categories = mysqli_query($con, "select * from category");
+$projects = mysqli_query($con, "SELECT * FROM project");
+$priorities = mysqli_query($con, "SELECT * FROM priority");
+$statuses = mysqli_query($con, "SELECT * FROM status");
+$kinds = mysqli_query($con, "SELECT * FROM kind");
+$categories = mysqli_query($con, "SELECT * FROM category");
 ?>
 
 <!-- Modal -->
@@ -36,7 +36,7 @@ $categories = mysqli_query($con, "select * from category");
               </div>
             </div>
           </div>
-          
+
           <div class="form-group">
             <div class="row">
               <label class="control-label col-md-3 col-sm-3 col-xs-12">Titulo<span class="required">*</span></label>

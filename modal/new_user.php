@@ -18,13 +18,13 @@
         <form class="form-horizontal form-label-left input_mask" id="add_user" name="add_user">
           <div id="result_user"></div>
 
-          <!-- <div class="row">
+          <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12 form-group">
               <div class="mx-auto input-tickets input_user">
-                <input name="user" required type="text" class="form-control input-log-tickets" placeholder="Usuario">
+                <input name="username" required type="text" class="form-control input-log-tickets" placeholder="Usuario">
               </div>
             </div>
-          </div> -->
+          </div>
 
           <div class="row">
 

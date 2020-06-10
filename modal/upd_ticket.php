@@ -1,9 +1,9 @@
 <?php
-$projects = mysqli_query($con, "select * from project");
-$priorities = mysqli_query($con, "select * from priority");
-$statuses = mysqli_query($con, "select * from status");
-$kinds = mysqli_query($con, "select * from kind");
-$categories = mysqli_query($con, "select * from category");
+$projects = mysqli_query($con, "SELECT * FROM project");
+$priorities = mysqli_query($con, "SELECT * FROM priority");
+$statuses = mysqli_query($con, "SELECT * FROM status");
+$kinds = mysqli_query($con, "SELECT * FROM kind");
+$categories = mysqli_query($con, "SELECT * FROM category");
 ?>
 <!-- Modal -->
 <div class="modal fade bs-example-modal-lg-udp" tabindex="-1" role="dialog" aria-hidden="true">

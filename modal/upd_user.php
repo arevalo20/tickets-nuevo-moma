@@ -13,13 +13,13 @@
 
           <input type="hidden" id="mod_id" name="mod_id">
 
-          <!-- <div class="row mx-auto">
+          <div class="row mx-auto">
             <div class="col-md-12 col-sm-12 col-xs-12 form-group">
               <div class="input-tickets input_user">
                 <input name="mod_username" id="mod_username" type="text" class="form-control input-log-tickets" required>
               </div>
             </div>
-          </div> -->
+          </div>
 
           <div class="row mx-auto">
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
