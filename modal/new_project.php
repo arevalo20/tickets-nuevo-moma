@@ -17,22 +17,19 @@
         <form class="form-horizontal form-label-left input_mask" method="post" id="add" name="add">
           <div id="result"></div>
 
-          <div class="form-group">
-            <div class="row">
-              <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre<span class="required">*</span></label>
-              <div class="col-md-8 col-sm-8 col-xs-12">
-                <input type="text" required name="name" class="form-control" placeholder="Nombre del proyecto">
-              </div>
+          <div class="row">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12 form-group">Nombre<span class="required">*</span></label>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+              <input type="text" required name="name" class="form-control" placeholder="Nombre del proyecto">
             </div>
           </div>
 
-          <div class="form-group">
-            <div class="row">
-              <label class="control-label col-md-3 col-sm-3 col-xs-12">Descripción <span class="required">*</span>
-              </label>
-              <div class="col-md-8 col-sm-8 col-xs-12">
-                <textarea name="description" class="form-control" required></textarea>
-              </div>
+
+          <div class="row">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12 form-group">Descripción <span class="required">*</span>
+            </label>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+              <textarea name="description" class="form-control" required></textarea>
             </div>
           </div>
 
