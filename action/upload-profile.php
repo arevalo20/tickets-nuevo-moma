@@ -19,11 +19,11 @@ if (isset($_FILES["file"])) {
     $src = $folder . $name;
     @move_uploaded_file($tmp_n, $src);
 
-    $query = mysqli_query($con, "UPDATE user set profile_pic=\"$name\"");
+    $query = mysqli_query($con, "UPDATE user SET profile_pic=\"$name\" ");
     if ($query) {
       echo "<div class='alert alert-success' role='alert'>
               <button type='button' class='close' data-dismiss='alert'>&times;</button>
-              <strong>¡Bien hecho!</strong> Perfil Actualizado Correctamente
+              <strong>¡Bien hecho!</strong><br> Perfil Actualizado Correctamente
             </div>";
     }
   }

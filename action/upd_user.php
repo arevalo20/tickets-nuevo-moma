@@ -9,9 +9,12 @@ if (empty($_POST['mod_name'])) {
 	$errors[] = "Correo Vacio vacío";
 } else if ($_POST['mod_status'] == "") {
 	$errors[] = "Selecciona el estado";
+} else if ($_POST['mod_tipouser'] == "") {
+	$errors[] = "Selecciona el tipo de usuario";
 } else if (
 	!empty($_POST['mod_name']) &&
 	!empty($_POST['mod_email']) &&
+	$_POST['mod_tipouser'] != "" &&
 	$_POST['mod_status'] != ""
 ) {
 
@@ -22,9 +25,10 @@ if (empty($_POST['mod_name'])) {
 	$email = $_POST["mod_email"];
 	$password = mysqli_real_escape_string($con, (strip_tags(sha1(md5($_POST["password"])), ENT_QUOTES)));
 	$status = intval($_POST['mod_status']);
+	$tipouser = intval($_POST['mod_tipouser']);
 	$id = $_POST['mod_id'];
 
-	$sql = "UPDATE user SET name=\"$name\", email=\"$email\",is_active=$status  WHERE id=$id";
+	$sql = "UPDATE user SET name=\"$name\", email=\"$email\", is_active=$status, tipouser=$tipouser WHERE id=$id";
 	$query_update = mysqli_query($con, $sql);
 	if ($query_update) {
 		$messages[] = "Datos actualizados satisfactoriamente.";

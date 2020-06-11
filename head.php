@@ -54,10 +54,6 @@ while ($row = mysqli_fetch_array($query)) {
   <!-- bootstrap-daterangepicker -->
   <link href="css/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
-  <!-- Custom Theme Style -->
-  <!-- <link href="css/custom.min.css" rel="stylesheet"> -->
-  <!-- <link href="css/custom.css" rel="stylesheet"> -->
-
   <!-- <link href="css/styles.min.css" rel="stylesheet"> -->
   <link href="css/styles.min.css" rel="stylesheet">
 
@@ -72,4 +68,3 @@ while ($row = mysqli_fetch_array($query)) {
   <?php require_once "header.php"; ?>
 
   <div id="layoutSidenav">
-    <!-- <div class="main_container"> -->

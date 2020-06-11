@@ -21,7 +21,7 @@
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12 form-group">
               <div class="mx-auto input-tickets input_user">
-                <input name="username" required type="text" class="form-control input-log-tickets" placeholder="Usuario">
+                <input name="username" type="text" class="form-control input-log-tickets" placeholder="Usuario">
               </div>
             </div>
           </div>
@@ -30,13 +30,13 @@
 
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="mx-auto input-tickets input_name">
-                <input name="name" required type="text" class="form-control input-log-tickets" placeholder="Nombre">
+                <input name="name" type="text" class="form-control input-log-tickets" placeholder="Nombre">
               </div>
             </div>
 
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="mx-auto input-tickets input_name">
-                <input name="lastname" type="text" class="form-control input-log-tickets" placeholder="Apellidos" required>
+                <input name="lastname" type="text" class="form-control input-log-tickets" placeholder="Apellidos">
               </div>
             </div>
 
@@ -45,15 +45,15 @@
           <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="input-tickets input_email">
-                <input name="email" type="text" class="form-control input-log-tickets" placeholder="Correo Electronico" required>
+                <input name="email" type="text" class="form-control input-log-tickets" placeholder="Correo Electronico">
               </div>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="input-tickets input_status">
-                <select class="custom-select input-log-tickets" required name="status">
-                  <option value="" selected>Selecciona estado</option>
-                  <option value="1">Activo</option>
-                  <option value="0">Inactivo</option>
+                <select class="custom-select input-log-tickets" name="tipouser">
+                  <option value="" selected>Tipo de usuario</option>
+                  <option value="1">Administrador</option>
+                  <option value="0">Usuario</option>
                 </select>
               </div>
             </div>
@@ -61,8 +61,18 @@
 
           <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+              <div class="input-tickets input_status">
+                <select class="custom-select input-log-tickets" name="status">
+                  <option value="" selected>Selecciona estado</option>
+                  <option value="1">Activo</option>
+                  <option value="0">Inactivo</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="input-tickets input_psw">
-                <input type="password" id="password" name="password" required class="form-control input-log-tickets">
+                <input type="password" id="password" name="password" class="form-control input-log-tickets">
               </div>
             </div>
           </div>

@@ -3,10 +3,10 @@ $title = "Dashboard - ";
 include "head.php";
 include "sidebar.php";
 
-$TicketData = mysqli_query($con, "select * from ticket where status_id=1");
-$ProjectData = mysqli_query($con, "select * from project");
-$CategoryData = mysqli_query($con, "select * from category");
-$UserData = mysqli_query($con, "select * from user order by created_at desc");
+$TicketData = mysqli_query($con, "SELECT * FROM ticket WHERE status_id = 1");
+$ProjectData = mysqli_query($con, "SELECT * FROM project");
+$CategoryData = mysqli_query($con, "SELECT * FROM category");
+$UserData = mysqli_query($con, "SELECT * FROM user ORDER BY created_at DESC");
 ?>
 
 <div id="layoutSidenav_content">
@@ -89,7 +89,7 @@ $UserData = mysqli_query($con, "select * from user order by created_at desc");
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
       <!-- content -->
@@ -123,7 +123,7 @@ $UserData = mysqli_query($con, "select * from user order by created_at desc");
                     <div class="row">
                       <label class="control-label col-12 col-md-5 col-sm-5" for="first-name">Usuario</label>
                       <div class="col-12 col-md-7 col-sm-7">
-                        <input type="text" name="name" id="first-name" class="form-control" value="<?php echo $username; ?>">
+                        <input type="text" name="name" id="first-name" class="form-control" value="<?php echo $username; ?>" readonly disabled>
                       </div>
                     </div>
                   </div>

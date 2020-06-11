@@ -36,16 +36,26 @@
 
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="input-tickets input_status">
-                <select class="custom-select input-log-tickets" required name="mod_status" id="mod_status">
-                  <option value="" selected>Selecciona estado</option>
-                  <option value="1">Activo</option>
-                  <option value="0">Inactivo</option>
+                <select class="custom-select input-log-tickets" name="mod_tipouser" id="mod_tipouser" required>
+                  <option value="" selected>Tipo de usuario</option>
+                  <option value="1">Administrador</option>
+                  <option value="0">Usuario</option>
                 </select>
               </div>
             </div>
           </div>
 
           <div class="row mx-auto">
+            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+              <div class="input-tickets input_status">
+                <select class="custom-select input-log-tickets" name="mod_status" id="mod_status" required>
+                  <option value="" selected>Selecciona estado</option>
+                  <option value="1">Activo</option>
+                  <option value="0">Inactivo</option>
+                </select>
+              </div>
+            </div>
+
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
               <div class="input-tickets input_psw">
                 <input type="password" id="password" name="password" class="form-control input-log-tickets">
