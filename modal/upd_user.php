@@ -35,7 +35,7 @@
             </div>
 
             <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-              <div class="input-tickets input_status">
+              <div class="input-tickets input_tipo">
                 <select class="custom-select input-log-tickets" name="mod_tipouser" id="mod_tipouser" required>
                   <option value="" selected>Tipo de usuario</option>
                   <option value="1">Administrador</option>

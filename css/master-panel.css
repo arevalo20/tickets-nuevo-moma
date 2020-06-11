@@ -63,6 +63,11 @@ body {
 	z-index: 1;
 }
 
+.input_tipo::before {
+	content: '\f2c2';
+	z-index: 1;
+}
+
 .input_psw::before {
 	content: '\f11c';
 	z-index: 1;
@@ -99,6 +104,12 @@ body {
 /* ---- .sb-sidenav-dark fin ---- */
 
 /* ---- .side-menu ---- */
+.site_title i {
+	border: 1px solid #eaeaea;
+	padding: 7px 8px;
+	border-radius: 50%;
+	line-height: 1.1;
+}
 .nav.side-menu > li {
 	margin-bottom: 5px;
 }

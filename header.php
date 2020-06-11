@@ -3,7 +3,7 @@
   <nav class="sb-topnav navbar navbar-expand navbar-dark bg-red-dark " role="navigation">
 
     <!-- <div class="navbar nav_title" style="border: 0;"> -->
-    <a href="#" class="site_title navbar-brand"><i class="fas fa-ticket-alt"></i> <span>Ticketly</span></a>
+    <a href="#" class="site_title navbar-brand"><i class="far fa-hand-peace"></i> <span>Soporte MOMA</span></a>
     <!-- </div> -->
     <!-- <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button> -->
 
