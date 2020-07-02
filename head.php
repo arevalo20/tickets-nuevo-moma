@@ -51,6 +51,8 @@ while ($row = mysqli_fetch_array($query)) {
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
+  <link rel="icon" sizes="16x16 32x32" href="images/favicon-blco.png">
+
   <!-- bootstrap-daterangepicker -->
   <link href="css/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 

@@ -32,6 +32,8 @@
               <a href="tickets.php"><i class="fa fa-ticket"></i> Tickets</a>
             </li>
 
+            <!-- <?php //if ($_SESSION['tipouser'] == 1) { ?> -->
+
             <li class="<?php if (isset($active3)) {
                           echo $active3;
                         } ?>">
@@ -56,11 +58,7 @@
               <a href="users.php"><i class="fa fa-users"></i> Usuarios</a>
             </li>
 
-            <li class="<?php if (isset($active8)) {
-                          echo $active8;
-                        } ?>">
-              <!-- <a href="about.php"><i class="fa fa-child"></i> Sobre Mi</a> -->
-            </li>
+            <!-- <?php // } ?> -->
 
           </ul>
         </div>

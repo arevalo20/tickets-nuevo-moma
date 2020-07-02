@@ -52,10 +52,10 @@ if (isset($_SESSION['user_id']) && $_SESSION !== null) {
             <div class="mx-auto text-center">
               <h3 class="titulo-tickets">Iniciar Sesión</h3>
               <?php
-              $invalid = sha1(md5("contrasena y email invalido"));
+              $invalid = sha1(md5("Email o contraseña invalidos"));
               if (isset($_GET['invalid']) && $_GET['invalid'] == $invalid) {
                 echo "<div class='alert alert-danger alert-dismissible fade-in text-center mx-auto' role='alert'>
-                <strong>Error!</strong> Contraseña o email invalido
+                <strong>Error!</strong> Email o contraseña invalidos
                 </div>";
               }
               ?>
